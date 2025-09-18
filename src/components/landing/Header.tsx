@@ -16,6 +16,14 @@ export default function Header() {
           <ul className="flex space-x-2 mr-2">
             <li>
               <Link
+                href="/admin"
+                className="text-sm text-white px-4 py-2 rounded-md bg-gray-800 hover:bg-gray-600 transition-colors"
+              >
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/signup"
                 className="text-sm text-white px-4 py-2 rounded-md bg-gray-800 hover:bg-gray-600 transition-colors"
               >

@@ -7,7 +7,7 @@ const Download: React.FC = () => (
     <div className="flex flex-col md:flex-row items-center gap-8">
       <div className="w-full md:w-1/2 order-1 p-4 flex justify-center md:justify-start items-center">
         <Image
-          src="/img/admin-screenshot.webp"
+          src="/img/admin-screenshot.png"
           alt="App interface"
           width={500}
           height={500}

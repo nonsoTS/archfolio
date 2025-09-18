@@ -15,7 +15,7 @@ export default function Page() {
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <div
         className="flex flex-col min-h-screen bg-white dark:bg-black bg-cover bg-center bg-opacity-10"
-        style={{ backgroundImage: "url('/img/home-bg.png')" }}
+        style={{ backgroundImage: "url('/img/home-bg.svg')" }}
       >
         <Header />
         <main>
