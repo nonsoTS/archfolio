@@ -16,10 +16,10 @@ const SingleWork = ({ work }: { work: any }) => {
   const x = useTransform(scrollYProgress, [0, 1], ['50%', '-50%'])
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full text-black">
       <div className="flex flex-col justify-between w-full h-auto px-5 lg:px-52 pt-5 pb-20">
         <div className="w-full h-fit py-10 text-start">
-          <h1 className="font_semibold uppercase text-6xl lg:text-8xl leading-tight">
+          <h1 className="font_semibold uppercase text-6xl lg:text-8xl leading-tight text-black">
             {work.title}
           </h1>
         </div>
@@ -27,13 +27,14 @@ const SingleWork = ({ work }: { work: any }) => {
         <div className="grid grid-cols-2 items-start justify-between py-10">
           <div className="w-full flex flex-col items-start justify-between gap-y-4 max-w-72">
             <p className="font_light font-semibold text-xs text-neutral-400">ROLE</p>
-            <hr className="w-full bg-neutral-300" />
-            <p className="font_regular text-base font-medium">{work.role}</p>
+            <hr className="w-full border-neutral-300" />
+            <p className="font_regular text-base font-medium text-black">{work.role}</p>
           </div>
+
           <div className="w-full flex flex-col items-start justify-between gap-y-4 max-w-72">
             <p className="font_light font-semibold text-xs text-neutral-400">SOFTWARE USED</p>
-            <hr className="w-full bg-neutral-300" />
-            <p className="font_regular text-base font-medium">
+            <hr className="w-full border-neutral-300" />
+            <p className="font_regular text-base font-medium text-black">
               {toTitleCaseArray(work.softwareUsed)}
             </p>
           </div>
@@ -41,9 +42,9 @@ const SingleWork = ({ work }: { work: any }) => {
 
         <div className="w-full flex flex-col items-start justify-between gap-y-4">
           <p className="font_light font-semibold text-xs text-neutral-400">SUMMARY</p>
-          <hr className="w-full bg-neutral-300" />
+          <hr className="w-full border-neutral-300" />
 
-          <RichText className="font_regular" data={work.details} enableGutter={false} />
+          <RichText className="font_regular text-black" data={work.details} enableGutter={false} />
         </div>
       </div>
 
