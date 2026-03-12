@@ -26,7 +26,7 @@ export const revalidatePage: CollectionAfterChangeHook<Work> = async ({
 
       revalidatePath(path)
       revalidatePath(singlePath)
-      revalidateTag('pages-sitemap')
+      revalidateTag('pages-sitemap', 'max')
     }
 
     // If the page was previously published, we need to revalidate the old path
@@ -40,7 +40,7 @@ export const revalidatePage: CollectionAfterChangeHook<Work> = async ({
 
       revalidatePath(oldPath)
       revalidatePath(singleOldPath)
-      revalidateTag('pages-sitemap')
+      revalidateTag('pages-sitemap', 'max')
     }
   }
   return doc
@@ -64,7 +64,7 @@ export const revalidateDelete: CollectionAfterDeleteHook<Work> = async ({
 
     revalidatePath(path)
     revalidatePath(singlePath)
-    revalidateTag('pages-sitemap')
+    revalidateTag('pages-sitemap', 'max')
   }
 
   return doc

@@ -15,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -30,15 +30,18 @@
         "./src/payload.config.ts"
       ]
     },
-    "target": "ES2022",
+    "target": "ES2022"
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "postcss.config.js", "tailwind.config.mjs"  ],
+    ".next/types/**/*.ts",
+    "postcss.config.js",
+    "tailwind.config.mjs",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
-  ],
+  ]
 }
